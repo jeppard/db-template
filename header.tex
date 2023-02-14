@@ -1,0 +1,38 @@
+% !TeX root = main.tex
+
+\documentclass[
+    pdftex,
+    oneside,
+    12pt,
+    a4paper,
+    parskip=half,
+]{scrartcl}
+
+% Used Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\selectlanguage{english}
+\usepackage{xcolor}
+\usepackage{acronym}
+\usepackage{csquotes}
+\usepackage{pgffor}
+\usepackage[
+    backend=biber,
+    style=apa6,
+    bibwarn=true,
+    bibencoding=utf8,
+    sortlocale=en_US,
+]{biblatex}
+
+% Load Settings
+\input{einstellungen}
+
+%Only for the Template
+\usepackage{lipsum}
+
+% Custom Commands
+\newcommand{\todo}[1]{\textcolor{red}{TODO: #1\\}}
+\newcommand{\tbd}[1]{\textcolor{red}{TBD: #1\\}}
+
+\newcommand{\chapter}[2]{\huge \textbf{#1} \\ \large \textit{#2}}
