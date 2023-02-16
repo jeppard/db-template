@@ -6,6 +6,8 @@
     12pt,
     a4paper,
     parskip=half,
+    headsepline,
+    footsepline,
 ]{scrartcl}
 
 % Used Packages
@@ -19,11 +21,12 @@
 \usepackage{pgffor}
 \usepackage[
     backend=biber,
-    style=apa6,
+    style=apa,
     bibwarn=true,
     bibencoding=utf8,
     sortlocale=en_US,
 ]{biblatex}
+\usepackage{scrlayer-scrpage}
 
 % Load Settings
 \input{einstellungen}
@@ -35,6 +38,14 @@
 
 %Only for the Template
 \usepackage{lipsum}
+
+% Header and Footer
+\ihead{New DB Technologies}
+\ohead{\titel}
+\chead{\datum}
+\ifoot{\hsize=400pt Authors: \authoren}
+\cfoot{}
+\ofoot{Page \thepage}
 
 % Custom Commands
 \newcommand{\todo}[1]{\textcolor{red}{TODO: #1}\\}
