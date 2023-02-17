@@ -28,6 +28,19 @@
 ]{biblatex}
 \usepackage{scrlayer-scrpage}
 
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,calc,positioning}
+
+\lstset{
+    breaklines=true,
+    breakautoindent=true,
+    showstringspaces=false,
+    captionpos=b,
+    frame=single
+}
+
 % Load Settings
 \input{einstellungen}
 
@@ -45,10 +58,10 @@
 \chead{\datum}
 \ifoot{\hsize=400pt Authors: \authoren}
 \cfoot{}
-\ofoot{Page \thepage}
+\ofoot{\thepage}
 
 % Custom Commands
 \newcommand{\todo}[1]{\textcolor{red}{TODO: #1}\\}
 \newcommand{\tbd}[1]{\textcolor{red}{TBD: #1}\\}
 
-\newcommand{\chapter}[2]{\huge \textbf{#1} \\ \large \textit{#2}}
+\newcommand{\chapter}[2]{\huge \textbf{#1} \\ \large \textit{#2}\par}
