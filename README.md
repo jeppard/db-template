@@ -40,3 +40,8 @@ The following custom commands are defined:
 * `\todo{}` to mark a Todo - all todo's should be removed in the final document
 * `\tbd{}` to mark something as "to be determined" - all tbd's should be removed in the final document
 * `\chapter{Chapter title}{subtitle}` is a custom commands for chapters - is only used by the template, you should not use/need it use `\section` and `\subsection`
+
+## Custom Packages
+If you need to use other TeX-Packages as provided, please message me. I will need the list of packages to combine the articles to a book. Please don't use any packages that alter the visual apperence of the article.
+
+
