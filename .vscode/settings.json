@@ -30,15 +30,6 @@
             ]
         },
         {
-            "name": "pdflatex -> bibtex -> pdflatex * 2",
-            "tools": [
-                "pdflatex",
-                "bibtex",
-                "pdflatex",
-                "pdflatex"
-            ]
-        },
-        {
             "name": "pdflatex -> biber -> pdflatex * 2",
             "tools": [
                 "pdflatex",
@@ -131,14 +122,6 @@
                 "-interaction=nonstopmode",
                 "-file-line-error",
                 "%DOC%"
-            ],
-            "env": {}
-        },
-        {
-            "name": "bibtex",
-            "command": "bibtex",
-            "args": [
-                "%DOCFILE%"
             ],
             "env": {}
         },
